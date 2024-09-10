@@ -1,9 +1,31 @@
+<!DOCTYPE html>
 <html>
-  <head>
+<head>
     <title>Minesweeper</title>
-    
-  </head>
-  <body>
-    <h1>Hello world</h1>
-  </body>
+    <!-- Link to the JavaScript file -->
+    <script src="solution-template.js" defer></script>
+    <!-- Link to the new CSS file -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Minesweeper</h1>
+
+        <!-- Add buttons to select difficulty -->
+        <div class="difficulty-buttons">
+            <button onclick="startGame('easy')">Easy</button>
+            <button onclick="startGame('medium')">Medium</button>
+            <button onclick="startGame('expert')">Expert</button>
+        </div>
+
+        <!-- Game board container -->
+        <div id="gameBoard"></div>
+
+         <!-- Message for right-click to flag functionality -->
+        <p class="info-message">RIGHT-CLICK TO FLAG A SQUARE</p>
+
+        <!-- Add a div to display game status -->
+        <div id="gameStatus"></div>
+    </div>
+</body>
 </html>
